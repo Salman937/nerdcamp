@@ -44,7 +44,7 @@
   </nav>
   <div class="container" style="margin: 30px">
       <form  class="form-horizontal"  method="post" action="<?php echo base_url();?>welcome/insert">
-        <div class="form-group">
+        <div class="form-group has-error" >
           <div class="col-sm-4">
             <input type="text" name="std_name" class="form-control" placeholder="Student Name" maxlength="15" >
           </div>

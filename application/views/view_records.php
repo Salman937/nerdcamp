@@ -28,7 +28,7 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">The Nerd Camp</a>
+        <a class="navbar-brand" href="<?php echo base_url();?>welcome/index">The Nerd Camp</a>
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -106,7 +106,7 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
               <a href="<?php echo base_url(); ?>crud/delete/<?php echo $row->user_id; ?>">Delete</a>
               </td>
                <td>
-              <a href="<?php echo base_url(); ?>crud/delete/<?php echo $row->user_id; ?>">View</a>
+              <a href="<?php echo base_url(); ?>crud/view/<?php echo $row->user_id; ?>">View</a>
               </td>
             </tr>  
            <?php } ?> 

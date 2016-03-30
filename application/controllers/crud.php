@@ -7,6 +7,12 @@ class Crud extends CI_Controller
 		$data['userdata']= $this->model->Select('users');
 		$this->load->view('view_records',$data);
 	}
+	public function view()
+	{
+		$view = array('user_id' =>$this->uri->segment(3));
+		$ShowData['Show'] = $this->model->DBedit('users',$view); 
+		$this->load->view('view',$ShowData);
+	}
 	public function Delete()
 	{
 		$Delete = array('user_id' =>$this->uri->segment(3));

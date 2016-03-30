@@ -36,8 +36,8 @@
         </div>
         <div class="form-group">
           <div class="col-sm-4">
-            <select name="courses" class= "form-control" value="<?php echo $Edit->course ?>">
-               <option value="null">Select Course</option>
+            <select name="courses" class= "form-control" value="">
+               <option value="null"><?php echo $Edit->course ?></option>
                <option> GAME DEVELOPMENT</option>
                <option> WEB DEVELOPMENT</option>
                <option> .NET DEVELOPMENT</option>
